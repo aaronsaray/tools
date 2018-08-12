@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+  <script src="main.js"></script>
+  <title>Tools</title>
+</head>
+
+<body>
+  <header class="ui menu">
+    <nav class="ui container">
+      <a class="item" href="/">
+        <i class="wrench icon"></i>
+        Quick Tools
+      </a>
+      <a class="item" href="https://github.com/aaronsaray/tools">
+        <i class="github icon"></i>
+        Source
+      </a>
+    </nav>
+  </header>
+  <main class="ui container">
+    <h1 class="ui header">Tools</h1>
+    <p>Just some quick, sloppy tools made selfishly by
+      <a href="https://aaronsaray.com">Aaron</a> for
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">anyone to use</a>.
+    </p>
+    <div class="ui hidden divider"></div>
+
+    <div class="ui grid">
+      <div class="row">
+        <div class="column">
+          <h4 class="ui horizontal divider header">
+            <i class="file code icon"></i>
+            JSON Pretty Print
+          </h4>
+          <form class="ui form" id="json-pretty-print">
+            <div class="field">
+              <label>Enter any format JSON</label>
+              <textarea></textarea>
+            </div>
+            <button class="ui button" type="submit">Prettify</button> and scroll down to see.
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <pre><code id="json-pretty-print-results"></code></pre>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui basic modal" id="error-modal">
+      <div class="ui icon header">
+        <i class="thumbs down icon"></i>
+        <span id="error-header"></span>
+      </div>
+      <div class="content">
+        <p>
+          <span id="error-content"></span>
+        </p>
+      </div>
+      <div class="actions">
+        <div class="ui green ok inverted button">
+          <i class="checkmark icon"></i>
+          Ok
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
