@@ -1,0 +1,7 @@
+pre {
+  overflow: auto;
+  max-height: 50vh;
+  tab-size: 2;
+  background: #f8f9ff;
+  font-size: 0.8rem;
+}
