@@ -15,7 +15,7 @@ $(function() {
       return false;
     }
 
-    $("#json-pretty-print-results").html(JSON.stringify(parsed, null, "\t"));
+    $("#json-pretty-print-results").text(JSON.stringify(parsed, null, "\t"));
   });
 });
 
