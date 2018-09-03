@@ -25,6 +25,15 @@ const Home = () => {
             </List.Description>
           </List.Content>
         </List.Item>
+        <List.Item as={Link} to="/font-preview">
+          <Icon name="font" />
+          <List.Content>
+            <List.Header>Font Preview</List.Header>
+            <List.Description>
+              Compare fonts and sizes in real time
+            </List.Description>
+          </List.Content>
+        </List.Item>
       </List>
     </React.Fragment>
   );

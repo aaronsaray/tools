@@ -3,6 +3,7 @@ import { Route, Link } from "react-router-dom";
 import { Menu, Icon, Container, Header, List } from "semantic-ui-react";
 import Home from "./Components/Home/Home";
 import JSONPrettyPrint from "./Components/JSONPrettyPrint/JSONPrettyPrint";
+import FontPreview from "./Components/FontPreview/FontPreview";
 
 class App extends Component {
   render() {
@@ -18,6 +19,10 @@ class App extends Component {
               <Icon name="code file" />
               JSON Pretty Print
             </Menu.Item>
+            <Menu.Item as={Link} to="/font-preview">
+              <Icon name="font" />
+              Font Preview
+            </Menu.Item>
             <Menu.Item as="a" href="https://github.com/aaronsaray/tools">
               <Icon name="github" />
               Source
@@ -27,6 +32,7 @@ class App extends Component {
         <Container as="main">
           <Route path="/" exact component={Home} />
           <Route path="/json-pretty-print" component={JSONPrettyPrint} />
+          <Route path="/font-preview" component={FontPreview} />
         </Container>
       </React.Fragment>
     );
