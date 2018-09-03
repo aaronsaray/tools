@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
-import { Menu, Icon, Container, Header, List } from "semantic-ui-react";
+import { Menu, Icon, Container } from "semantic-ui-react";
 import Home from "./Components/Home/Home";
 import JSONPrettyPrint from "./Components/JSONPrettyPrint/JSONPrettyPrint";
 import FontPreview from "./Components/FontPreview/FontPreview";
