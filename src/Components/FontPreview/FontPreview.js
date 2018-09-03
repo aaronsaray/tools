@@ -10,6 +10,15 @@ import {
 } from "semantic-ui-react";
 import { Slider } from "react-semantic-ui-range";
 
+/**
+ * Notes:
+ *
+ * Probably should add in font-weight and maybe color at some point
+ * maybe the width of the text as well
+ * allow you to add your own text
+ * and then make slider/display a separate component
+ */
+
 class FontPreview extends Component {
   sizeSettings = {
     start: 16,
