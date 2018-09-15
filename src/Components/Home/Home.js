@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, List, Icon, Divider } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import ROUTES from "../../Routes";
 
 const Home = () => {
   return (
@@ -16,28 +17,28 @@ const Home = () => {
       </p>
       <Divider hidden />
       <List>
-        <List.Item as={Link} to="/json-pretty-print">
+        <List.Item as={Link} to={ROUTES["json pretty print"].path}>
           <Icon name="file code" />
           <List.Content>
-            <List.Header>JSON Pretty Print</List.Header>
+            <List.Header>{ROUTES["json pretty print"].name}</List.Header>
             <List.Description>
               Takes JSON and formats it in a readable way
             </List.Description>
           </List.Content>
         </List.Item>
-        <List.Item as={Link} to="/font-preview">
+        <List.Item as={Link} to={ROUTES["font preview"].path}>
           <Icon name="font" />
           <List.Content>
-            <List.Header>Font Preview</List.Header>
+            <List.Header>{ROUTES["font preview"].name}</List.Header>
             <List.Description>
               Compare fonts and sizes in real time
             </List.Description>
           </List.Content>
         </List.Item>
-        <List.Item as={Link} to="/character-encode">
+        <List.Item as={Link} to={ROUTES["character encode"].path}>
           <Icon name="hashtag" />
           <List.Content>
-            <List.Header>Character Encode</List.Header>
+            <List.Header>{ROUTES["character encode"].name}</List.Header>
             <List.Description>
               Convert content to character encoding
             </List.Description>

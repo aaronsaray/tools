@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
+import ROUTES from "./Routes";
 import { Menu, Icon, Container } from "semantic-ui-react";
 import Home from "./Components/Home/Home";
 import JSONPrettyPrint from "./Components/JSONPrettyPrint/JSONPrettyPrint";
@@ -12,21 +13,21 @@ class App extends Component {
       <React.Fragment>
         <Menu as="header">
           <Container as="nav">
-            <Menu.Item as={Link} to="/">
+            <Menu.Item as={Link} to={ROUTES["home"].path}>
               <Icon name="wrench" />
-              Quick Tools
+              {ROUTES["home"].name}
             </Menu.Item>
-            <Menu.Item as={Link} to="/json-pretty-print">
+            <Menu.Item as={Link} to={ROUTES["json pretty print"].path}>
               <Icon name="code file" />
-              JSON Pretty Print
+              {ROUTES["json pretty print"].name}
             </Menu.Item>
-            <Menu.Item as={Link} to="/font-preview">
+            <Menu.Item as={Link} to={ROUTES["font preview"].path}>
               <Icon name="font" />
-              Font Preview
+              {ROUTES["font preview"].name}
             </Menu.Item>
-            <Menu.Item as={Link} to="/character-encode">
+            <Menu.Item as={Link} to={ROUTES["character encode"].path}>
               <Icon name="hashtag" />
-              Character Encode
+              {ROUTES["character encode"].name}
             </Menu.Item>
             <Menu.Item as="a" href="https://github.com/aaronsaray/tools">
               <Icon name="github" />
@@ -35,10 +36,16 @@ class App extends Component {
           </Container>
         </Menu>
         <Container as="main">
-          <Route path="/" exact component={Home} />
-          <Route path="/json-pretty-print" component={JSONPrettyPrint} />
-          <Route path="/font-preview" component={FontPreview} />
-          <Route path="/character-encode" component={CharacterEncode} />
+          <Route path={ROUTES["home"].path} exact component={Home} />
+          <Route
+            path={ROUTES["json pretty print"].path}
+            component={JSONPrettyPrint}
+          />
+          <Route path={ROUTES["font preview"].path} component={FontPreview} />
+          <Route
+            path={ROUTES["character encode"].path}
+            component={CharacterEncode}
+          />
         </Container>
       </React.Fragment>
     );
