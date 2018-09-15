@@ -34,7 +34,7 @@ const Home = () => {
             </List.Description>
           </List.Content>
         </List.Item>
-        <List.Item as={Link} to="/character-code">
+        <List.Item as={Link} to="/character-encode">
           <Icon name="hashtag" />
           <List.Content>
             <List.Header>Character Encode</List.Header>
