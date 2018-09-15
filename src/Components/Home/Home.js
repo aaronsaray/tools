@@ -34,6 +34,15 @@ const Home = () => {
             </List.Description>
           </List.Content>
         </List.Item>
+        <List.Item as={Link} to="/character-code">
+          <Icon name="hashtag" />
+          <List.Content>
+            <List.Header>Character Encode</List.Header>
+            <List.Description>
+              Convert content to character encoding
+            </List.Description>
+          </List.Content>
+        </List.Item>
       </List>
     </React.Fragment>
   );

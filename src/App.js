@@ -4,6 +4,7 @@ import { Menu, Icon, Container } from "semantic-ui-react";
 import Home from "./Components/Home/Home";
 import JSONPrettyPrint from "./Components/JSONPrettyPrint/JSONPrettyPrint";
 import FontPreview from "./Components/FontPreview/FontPreview";
+import CharacterEncode from "./Components/CharacterEncode/CharacterEncode";
 
 class App extends Component {
   render() {
@@ -23,6 +24,10 @@ class App extends Component {
               <Icon name="font" />
               Font Preview
             </Menu.Item>
+            <Menu.Item as={Link} to="/character-encode">
+              <Icon name="hashtag" />
+              Character Encode
+            </Menu.Item>
             <Menu.Item as="a" href="https://github.com/aaronsaray/tools">
               <Icon name="github" />
               Source
@@ -33,6 +38,7 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/json-pretty-print" component={JSONPrettyPrint} />
           <Route path="/font-preview" component={FontPreview} />
+          <Route path="/character-encode" component={CharacterEncode} />
         </Container>
       </React.Fragment>
     );
