@@ -14,6 +14,10 @@ const ROUTES = {
   "character encode": {
     name: "Character Encode",
     path: "/character-encode"
+  },
+  "markdown table": {
+    name: "Markdown Table Generator",
+    path: "/markdown-table"
   }
 };
 

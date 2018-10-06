@@ -44,6 +44,15 @@ const Home = () => {
             </List.Description>
           </List.Content>
         </List.Item>
+        <List.Item as={Link} to={ROUTES["markdown table"].path}>
+          <Icon name="table" />
+          <List.Content>
+            <List.Header>{ROUTES["markdown table"].name}</List.Header>
+            <List.Description>
+              Generate Markdown table from csv data
+            </List.Description>
+          </List.Content>
+        </List.Item>
       </List>
     </React.Fragment>
   );

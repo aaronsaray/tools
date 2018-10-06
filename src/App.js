@@ -6,6 +6,7 @@ import Home from "./Components/Home/Home";
 import JSONPrettyPrint from "./Components/JSONPrettyPrint/JSONPrettyPrint";
 import FontPreview from "./Components/FontPreview/FontPreview";
 import CharacterEncode from "./Components/CharacterEncode/CharacterEncode";
+import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 
 class App extends Component {
   render() {
@@ -29,6 +30,10 @@ class App extends Component {
               <Icon name="hashtag" />
               {ROUTES["character encode"].name}
             </Menu.Item>
+            <Menu.Item as={Link} to={ROUTES["markdown table"].path}>
+              <Icon name="table" />
+              {ROUTES["markdown table"].name}
+            </Menu.Item>
             <Menu.Item as="a" href="https://github.com/aaronsaray/tools">
               <Icon name="github" />
               Source
@@ -45,6 +50,10 @@ class App extends Component {
           <Route
             path={ROUTES["character encode"].path}
             component={CharacterEncode}
+          />
+          <Route
+            path={ROUTES["markdown table"].path}
+            component={MarkdownTable}
           />
         </Container>
       </React.Fragment>
