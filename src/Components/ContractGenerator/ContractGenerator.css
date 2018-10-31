@@ -1,0 +1,43 @@
+.no-label {
+  margin-right: 10px;
+}
+.signature-line {
+  border-bottom: 1px solid black;
+  display: block;
+}
+.ui.basic.table tbody tr {
+  border: none;
+}
+.ui.table tr td {
+  border: none;
+}
+.for-print {
+  display: none;
+}
+
+@media print {
+  header {
+    display: none !important;
+  }
+  main {
+    padding: 20px;
+  }
+  input[type="text"],
+  textarea {
+    border: none !important;
+    padding: 0px !important;
+    color: black !important;
+  }
+  .ui.basic.label {
+    border: none;
+  }
+  .ui.list {
+    display: none !important;
+  }
+  .for-print {
+    display: block;
+  }
+  .button {
+    display: none !important;
+  }
+}
