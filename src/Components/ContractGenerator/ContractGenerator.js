@@ -417,8 +417,9 @@ export default class ContractGenerator extends Component {
           <h4>Payment schedule</h4>
           <p>
             We issue invoices electronically. Our payment terms are 10 days from
-            the date of invoice. These can be paid online via Credit Card or
-            through the mail with Check.
+            the date of invoice (unless specified differently on the invoice).
+            These can be paid online via Credit Card or through the mail with
+            Check.
           </p>
           <p>
             We reserve the right to charge interest on all overdue debts at the
