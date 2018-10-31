@@ -137,7 +137,7 @@ export default class ContractGenerator extends Component {
                 className="no-label"
                 onChange={this.handleChooseFlatRate}
               />{" "}
-              For the estimated total price of{" "}
+              For the flat rate total of{" "}
               <Input
                 label={{ basic: true, content: "$" }}
                 labelPosition="left"
