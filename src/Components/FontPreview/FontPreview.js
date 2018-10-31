@@ -19,7 +19,7 @@ import { Slider } from "react-semantic-ui-range";
  * and then make slider/display a separate component
  */
 
-class FontPreview extends Component {
+export default class FontPreview extends Component {
   sizeSettings = {
     start: 16,
     min: 1,
@@ -199,5 +199,3 @@ class FontPreview extends Component {
     );
   }
 }
-
-export default FontPreview;

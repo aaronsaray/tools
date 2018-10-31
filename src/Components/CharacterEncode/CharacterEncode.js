@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Grid, Header, Form, TextArea } from "semantic-ui-react";
 
-class CharacterEncode extends Component {
+export default class CharacterEncode extends Component {
   state = {
     value: "",
     encoded: ""
@@ -47,5 +47,3 @@ class CharacterEncode extends Component {
     );
   }
 }
-
-export default CharacterEncode;

@@ -10,7 +10,7 @@ import {
   Icon
 } from "semantic-ui-react";
 
-class JSONPrettyPrint extends Component {
+export default class JSONPrettyPrint extends Component {
   state = {
     errorModal: false,
     value: "",
@@ -84,5 +84,3 @@ class JSONPrettyPrint extends Component {
     );
   }
 }
-
-export default JSONPrettyPrint;

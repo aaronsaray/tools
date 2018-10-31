@@ -18,6 +18,10 @@ const ROUTES = {
   "markdown table": {
     name: "Markdown Table Generator",
     path: "/markdown-table"
+  },
+  "contract generator": {
+    name: "Contract Generator",
+    path: "/contract-generator"
   }
 };
 

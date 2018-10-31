@@ -9,7 +9,7 @@ import {
 } from "semantic-ui-react";
 import Papa from "papaparse";
 
-class MarkdownTable extends Component {
+export default class MarkdownTable extends Component {
   state = {
     value: "",
     markdown: ""
@@ -49,34 +49,30 @@ class MarkdownTable extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Container>
-          <Grid>
-            <Grid.Row>
-              <Grid.Column>
-                <Header as="h1">Markdown Table from CSV</Header>
-                <Form onSubmit={this.handleSubmit}>
-                  <Form.Field>
-                    <label>Enter CSV Data</label>
-                    <TextArea onChange={this.handleChange} />
-                  </Form.Field>
-                  <Button type="submit">Generate Table</Button> and scroll down
-                  to see.
-                </Form>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row>
-              <Grid.Column>
-                <pre>
-                  <code>{this.state.markdown}</code>
-                </pre>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Container>
-      </React.Fragment>
+      <Container>
+        <Grid>
+          <Grid.Row>
+            <Grid.Column>
+              <Header as="h1">Markdown Table from CSV</Header>
+              <Form onSubmit={this.handleSubmit}>
+                <Form.Field>
+                  <label>Enter CSV Data</label>
+                  <TextArea onChange={this.handleChange} />
+                </Form.Field>
+                <Button type="submit">Generate Table</Button> and scroll down to
+                see.
+              </Form>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <pre>
+                <code>{this.state.markdown}</code>
+              </pre>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
     );
   }
 }
-
-export default MarkdownTable;
