@@ -53,6 +53,13 @@ const Home = () => {
             </List.Description>
           </List.Content>
         </List.Item>
+        <List.Item as={Link} to={ROUTES["contract generator"].path}>
+          <Icon name="file alternate" />
+          <List.Content>
+            <List.Header>{ROUTES["contract generator"].name}</List.Header>
+            <List.Description>Generate Contract for Services</List.Description>
+          </List.Content>
+        </List.Item>
       </List>
     </React.Fragment>
   );
