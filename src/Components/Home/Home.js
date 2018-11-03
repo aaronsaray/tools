@@ -1,7 +1,7 @@
 import React from "react";
 import { Header, List, Icon, Divider } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-import ROUTES from "../../Routes";
+import components from "../../components";
 
 const Home = () => {
   return (
@@ -17,15 +17,15 @@ const Home = () => {
       </p>
       <Divider hidden />
       <List>
-        {ROUTES.map(route => {
-          if (route.ignoreInList) return;
+        {components.map(component => {
+          if (component.ignoreInList) return "";
 
           return (
-            <List.Item as={Link} to={route.path}>
-              <Icon name={route.icon} />
+            <List.Item as={Link} to={component.path} key={component.path}>
+              <Icon name={component.icon} />
               <List.Content>
-                <List.Header>{route.name}</List.Header>
-                <List.Description>{route.description}</List.Description>
+                <List.Header>{component.name}</List.Header>
+                <List.Description>{component.description}</List.Description>
               </List.Content>
             </List.Item>
           );

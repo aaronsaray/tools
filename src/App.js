@@ -11,7 +11,7 @@ class App extends Component {
           <Container as="nav">
             {components.map(component => {
               return (
-                <Menu.Item as={Link} to={component.path}>
+                <Menu.Item as={Link} to={component.path} key={component.path}>
                   <Icon name={component.icon} />
                   {component.name}
                 </Menu.Item>
@@ -26,6 +26,7 @@ class App extends Component {
                 path={component.path}
                 exact
                 component={component.component}
+                key={component.path}
               />
             );
           })}

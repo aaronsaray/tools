@@ -26,7 +26,7 @@ export default class CharacterEncode extends Component {
           <Grid.Row>
             <Grid.Column>
               <Header as="h1">Character Encode</Header>
-              <Form onSubmit={this.handleSubmit}>
+              <Form>
                 <Form.Field>
                   <label>Enter any text</label>
                   <TextArea onChange={this.handleChange} />
