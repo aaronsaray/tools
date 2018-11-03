@@ -17,49 +17,19 @@ const Home = () => {
       </p>
       <Divider hidden />
       <List>
-        <List.Item as={Link} to={ROUTES["json pretty print"].path}>
-          <Icon name="file code" />
-          <List.Content>
-            <List.Header>{ROUTES["json pretty print"].name}</List.Header>
-            <List.Description>
-              Takes JSON and formats it in a readable way
-            </List.Description>
-          </List.Content>
-        </List.Item>
-        <List.Item as={Link} to={ROUTES["font preview"].path}>
-          <Icon name="font" />
-          <List.Content>
-            <List.Header>{ROUTES["font preview"].name}</List.Header>
-            <List.Description>
-              Compare fonts and sizes in real time
-            </List.Description>
-          </List.Content>
-        </List.Item>
-        <List.Item as={Link} to={ROUTES["character encode"].path}>
-          <Icon name="hashtag" />
-          <List.Content>
-            <List.Header>{ROUTES["character encode"].name}</List.Header>
-            <List.Description>
-              Convert content to character encoding
-            </List.Description>
-          </List.Content>
-        </List.Item>
-        <List.Item as={Link} to={ROUTES["markdown table"].path}>
-          <Icon name="table" />
-          <List.Content>
-            <List.Header>{ROUTES["markdown table"].name}</List.Header>
-            <List.Description>
-              Generate Markdown table from csv data
-            </List.Description>
-          </List.Content>
-        </List.Item>
-        <List.Item as={Link} to={ROUTES["contract generator"].path}>
-          <Icon name="file alternate" />
-          <List.Content>
-            <List.Header>{ROUTES["contract generator"].name}</List.Header>
-            <List.Description>Generate Contract for Services</List.Description>
-          </List.Content>
-        </List.Item>
+        {ROUTES.map(route => {
+          if (route.ignoreInList) return;
+
+          return (
+            <List.Item as={Link} to={route.path}>
+              <Icon name={route.icon} />
+              <List.Content>
+                <List.Header>{route.name}</List.Header>
+                <List.Description>{route.description}</List.Description>
+              </List.Content>
+            </List.Item>
+          );
+        })}
       </List>
     </React.Fragment>
   );
