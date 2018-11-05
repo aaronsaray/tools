@@ -1,0 +1,16 @@
+.meme-text {
+  font-family: impact;
+  color: #ffffff;
+  position: absolute;
+  font-size: 60px;
+  -webkit-text-stroke: 3px black;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+.top {
+  top: 50px;
+}
+.bottom {
+  bottom: 50px;
+}
