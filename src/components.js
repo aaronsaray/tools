@@ -5,6 +5,7 @@ import CharacterEncode from "./Components/CharacterEncode/CharacterEncode";
 import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import ContractGenerator from "./Components/ContractGenerator/ContractGenerator";
 import RGBHex from "./Components/RGBHex/RGBHex";
+import Meme from "./Components/Meme/Meme";
 
 const components = [
   {
@@ -55,6 +56,13 @@ const components = [
     icon: "eye dropper",
     description: "RGB Hex Converter and Back Again",
     component: RGBHex
+  },
+  {
+    name: "Meme Gen",
+    path: "/meme",
+    icon: "image",
+    description: "My Meme Generation Tool",
+    component: Meme
   }
 ];
 
