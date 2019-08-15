@@ -6,6 +6,7 @@ import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import ContractGenerator from "./Components/ContractGenerator/ContractGenerator";
 import RGBHex from "./Components/RGBHex/RGBHex";
 import Meme from "./Components/Meme/Meme";
+import EmailPermutator from "./Components/EmailPermutator/EmailPermutator";
 
 const components = [
   {
@@ -63,6 +64,14 @@ const components = [
     icon: "image",
     description: "My Meme Generation Tool",
     component: Meme
+  },
+  {
+    name: "Email Permutator",
+    path: "/email-permutator",
+    icon: "mail",
+    description:
+      "Generates permutations of email addresses based on user contact details",
+    component: EmailPermutator
   }
 ];
 
