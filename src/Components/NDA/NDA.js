@@ -38,7 +38,7 @@ export default class NDA extends Component {
             content="Print"
             onClick={this.handlePrint}
           />
-          <h1>Non Disclosure Agreement</h1>
+          <h1>Non-Disclosure Agreement</h1>
           <h2>
             Between More Better Faster LLC and{" "}
             <Input onChange={this.handleClientName} />
