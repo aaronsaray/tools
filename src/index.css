@@ -5,3 +5,6 @@ pre {
   background: #f8f9ff;
   font-size: 0.8rem;
 }
+header {
+  overflow-y: auto;
+}

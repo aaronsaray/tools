@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Menu as="header">
+        <Menu as="header" text>
           <Container as="nav">
             {components.map(component => {
               return (

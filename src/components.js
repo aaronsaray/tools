@@ -4,6 +4,7 @@ import FontPreview from "./Components/FontPreview/FontPreview";
 import CharacterEncode from "./Components/CharacterEncode/CharacterEncode";
 import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import ContractGenerator from "./Components/ContractGenerator/ContractGenerator";
+import NDA from "./Components/NDA/NDA";
 import RGBHex from "./Components/RGBHex/RGBHex";
 import Meme from "./Components/Meme/Meme";
 import EmailPermutator from "./Components/EmailPermutator/EmailPermutator";
@@ -50,6 +51,13 @@ const components = [
     icon: "file alternate",
     description: "Generate Contract for Services",
     component: ContractGenerator
+  },
+  {
+    name: "NDA Generator",
+    path: "/nda-generator",
+    icon: "file alternate outline",
+    description: "Generate NDA",
+    component: NDA
   },
   {
     name: "RGB ↔ Hex",
