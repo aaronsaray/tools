@@ -8,3 +8,8 @@ pre {
 header {
   overflow-y: auto;
 }
+label > span {
+  color: #aaaaaa;
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+}

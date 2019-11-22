@@ -5,6 +5,7 @@ import CharacterEncode from "./Components/CharacterEncode/CharacterEncode";
 import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import RGBHex from "./Components/RGBHex/RGBHex";
 import EmailPermutator from "./Components/EmailPermutator/EmailPermutator";
+import MetaGenerator from "./Components/MetaGenerator/MetaGenerator";
 
 const components = [
   {
@@ -63,6 +64,13 @@ const components = [
     description:
       "Generates permutations of email addresses based on user contact details",
     component: EmailPermutator
+  },
+  {
+    name: "Meta Tag Generator",
+    path: "/meta-generator",
+    icon: "tasks",
+    description: "Generates meta and open graph tags",
+    component: MetaGenerator
   }
 ];
 
