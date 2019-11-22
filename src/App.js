@@ -11,7 +11,12 @@ class App extends Component {
           <Container as="nav">
             {components.map(component => {
               return (
-                <Menu.Item as={Link} to={component.path} key={component.path}>
+                <Menu.Item
+                  as={component.external ? "a" : Link}
+                  to={component.path}
+                  href={component.path}
+                  key={component.path}
+                >
                   <Icon name={component.icon} />
                   {component.name}
                 </Menu.Item>

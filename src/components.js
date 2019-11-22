@@ -6,7 +6,6 @@ import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import ContractGenerator from "./Components/ContractGenerator/ContractGenerator";
 import NDA from "./Components/NDA/NDA";
 import RGBHex from "./Components/RGBHex/RGBHex";
-import Meme from "./Components/Meme/Meme";
 import EmailPermutator from "./Components/EmailPermutator/EmailPermutator";
 
 const components = [
@@ -68,10 +67,10 @@ const components = [
   },
   {
     name: "Meme Gen",
-    path: "/meme",
+    path: "https://quickpic.dev",
+    external: true,
     icon: "image",
-    description: "My Meme Generation Tool",
-    component: Meme
+    description: "Meme Generation Tool (as well as other image editing options)"
   },
   {
     name: "Email Permutator",

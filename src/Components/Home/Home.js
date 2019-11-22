@@ -21,7 +21,12 @@ const Home = () => {
           if (component.ignoreInList) return "";
 
           return (
-            <List.Item as={Link} to={component.path} key={component.path}>
+            <List.Item
+              as={component.external ? "a" : Link}
+              href={component.path}
+              to={component.path}
+              key={component.path}
+            >
               <Icon name={component.icon} />
               <List.Content>
                 <List.Header>{component.name}</List.Header>
