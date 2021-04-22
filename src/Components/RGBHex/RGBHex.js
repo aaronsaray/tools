@@ -75,7 +75,6 @@ export default class RGBHex extends Component {
   };
 
   handleHexChange = e => {
-    console.log("ran");
     const value = e.target.value;
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(value);
 

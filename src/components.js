@@ -6,6 +6,7 @@ import MarkdownTable from "./Components/MarkdownTable/MarkdownTable";
 import RGBHex from "./Components/RGBHex/RGBHex";
 import EmailPermutator from "./Components/EmailPermutator/EmailPermutator";
 import MetaGenerator from "./Components/MetaGenerator/MetaGenerator";
+import OriginalCost from "./Components/OriginalCost/OriginalCost";
 
 const components = [
   {
@@ -16,7 +17,7 @@ const components = [
     component: Home
   },
   {
-    name: "JSON Pretty Print",
+    name: "Pretty JSON",
     path: "/json-pretty-print",
     icon: "code file",
     description: "Takes JSON and formats it in a readable way",
@@ -37,7 +38,7 @@ const components = [
     component: CharacterEncode
   },
   {
-    name: "MD Table Generator",
+    name: "MD Table Gen",
     path: "/markdown-table",
     icon: "table",
     description: "Generate Markdown table from csv data",
@@ -66,12 +67,19 @@ const components = [
     component: EmailPermutator
   },
   {
-    name: "Meta Tag Generator",
+    name: "Meta Tag Gen",
     path: "/meta-generator",
     icon: "tasks",
     description: "Generates meta and open graph tags",
     component: MetaGenerator
-  }
+  },
+  {
+    name: "Original Cost",
+    path: "/original-cost",
+    icon: "percent",
+    description: "Show original cost of item before a discount percentage.",
+    component: OriginalCost
+  },
 ];
 
 export default components;
